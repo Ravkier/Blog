@@ -9,5 +9,10 @@ module.exports = {
             { text: 'github', link: 'https://github.com/Ravkier/Blog',  target:'_blank' },
           ],
           lastUpdated: '最后更新',
+          sidebar: {
+            '/accumulation/': [
+                
+            ]
+        }
     }
   }
