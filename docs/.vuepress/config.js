@@ -13,6 +13,9 @@ module.exports = {
           ],
           lastUpdated: '最后更新',
           sidebar: {
+            '/career/': [
+              'create-website'
+            ],
             '/accumulationBasics/': [
               'processes-and-threads'
             ]
