@@ -5,13 +5,16 @@ module.exports = {
         nav: [
             { text: '首页', link: '/' },
             { text: '个人生涯', link: '/career/' },
-            { text: '技术积累', link: '/accumulation/' },
+            { 
+              text: '计算机基础', 
+              link: '/accumulationBasics/'
+            },
             { text: 'github', link: 'https://github.com/Ravkier/Blog',  target:'_blank' },
           ],
           lastUpdated: '最后更新',
           sidebar: {
-            '/accumulation/': [
-                
+            '/accumulationBasics/': [
+              'processes-and-threads'
             ]
         }
     }
