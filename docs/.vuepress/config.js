@@ -17,6 +17,7 @@ module.exports = {
               'create-website'
             ],
             '/accumulationBasics/': [
+              'shell-base',
               'processes-and-threads'
             ]
         }
