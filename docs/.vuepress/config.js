@@ -9,6 +9,10 @@ module.exports = {
               text: '计算机基础', 
               link: '/accumulationBasics/'
             },
+            { 
+              text: 'web应用框架', 
+              link: '/webapplication/'
+            },
             { text: 'github', link: 'https://github.com/Ravkier/Blog',  target:'_blank' },
           ],
           lastUpdated: '最后更新',
@@ -19,7 +23,12 @@ module.exports = {
             '/accumulationBasics/': [
               'shell-base',
               'processes-and-threads'
-            ]
+            ],
+            '/webapplication/': [
+              'koa',
+              'egg',
+              'midway'
+            ] 
         }
     }
   }
