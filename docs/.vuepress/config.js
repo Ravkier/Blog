@@ -18,7 +18,8 @@ module.exports = {
           lastUpdated: '最后更新',
           sidebar: {
             '/career/': [
-              'create-website'
+              'create-website',
+              'file-down'
             ],
             '/accumulationBasics/': [
               'shell-base',
