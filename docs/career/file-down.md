@@ -26,7 +26,7 @@
             return res.json()
         } else {
             isRun = fileFn
-            return res.bolb()
+            return res.blob()
         }
     }).then(res => {
         isRun && isRun(res)
