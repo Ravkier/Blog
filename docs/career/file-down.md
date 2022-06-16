@@ -17,25 +17,28 @@
 ##### 具体实现
 ```js
 //  针对文件
- function fileFetch(url, fileFn, jsonFn) {
-    let isRun = null
-    fetch(url).then(res => {
-        const contentType = res.hearders.get('content-type')
-        if(contentType.indexOf('json') >= 0) {
-            isRun = jsonfn
-            return res.json()
-        } else {
-            isRun = fileFn
-            return res.blob()
+ function fileFetch(url) {
+    return new Promise((resolve, reject) => {
+        fetch(url).then(res => {
+            const contentType = res.hearders.get('content-type')
+            if(contentType.indexOf('json') >= 0) {
+                isRun = 'json'
+                return res.json()
+            } else {
+                isRun = 'file'
+                return res.blob()
+            }
+        }).then(res => {
+            resolve({ type: isRun, res })
+        }).catch(err) {
+            reject(err)
         }
-    }).then(res => {
-        isRun && isRun(res)
     })
  }
 ```
 ##### 思路拓展
 + 可以处理各种不同的场景
-+ response中的method
++ response中的[method](https://developer.mozilla.org/zh-CN/docs/Web/API/Response/arrayBuffe)
     - arrayBuffer
     - blob
     - clone
