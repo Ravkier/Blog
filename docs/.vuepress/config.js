@@ -1,4 +1,20 @@
 module.exports = {
+  head: [
+    [
+      'meta',
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'
+      }
+    ],
+    [
+      'meta',
+      {
+        name: 'baidu-site-verification',
+        content: 'code-zlxkNua3Rq'
+      }
+    ]
+  ],
     title: '洛风的全栈之路',
     description: '洛风的全栈之路',
     themeConfig: {
