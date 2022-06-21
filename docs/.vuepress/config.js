@@ -88,7 +88,7 @@ module.exports = {
             {
               title: '线性数据结构',
               children: [
-                'Stack'
+                'Stack', 'queue'
               ]
             }
           ],

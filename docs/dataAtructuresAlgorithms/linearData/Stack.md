@@ -21,7 +21,7 @@
         // 删除数据
         pop() {
             // 添加从末尾，只有一个出入口，出入口相同 所以删除最后一个元素
-            this.stack.pop()
+            return this.stack.pop()
         }
         // 栈的长度
         getSize() {
