@@ -38,6 +38,19 @@ module.exports = {
             text: '计算机基础', 
             link: '/accumulationBasics/'
           },
+          {
+            text: '前端框架',
+            items: [
+              {
+                text: 'vue',
+                link: '/frontEndFramework/vue-related/'
+              },
+              {
+                text: 'react',
+                link: '/frontEndFramework/react-related/'
+              },
+            ],
+          },
           { 
             text: 'web应用框架', 
             link: '/webapplication/'
@@ -83,6 +96,20 @@ module.exports = {
             'koa',
             'egg',
             'midway'
+          ],
+          '/frontEndFramework/vue-related/': [
+            {
+              title: 'vue3源码解析',
+              children: [
+                'ASTTemplate'
+              ]
+            }
+          ],
+          '/frontEndFramework/react-related/': [
+            {
+              title: 'react',
+              children: []
+            }
           ],
           '/dataAtructuresAlgorithms/linearData/': [
             {
